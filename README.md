@@ -1,4 +1,4 @@
-#This is a minimal Youtube thumbnail click-through rate predictor
+# This is a minimal Youtube thumbnail click-through rate predictor
 
 You can try the app at [oldfatboy.com](oldfatboy.com)
 
