@@ -2,7 +2,7 @@
 
 ![MVP](mvp.png)
 
-You can try the app at [oldfatboy.com](oldfatboy.com)
+You can try the app at [oldfatboy.com](https://oldfatboy.com)
 
 Project blog is at [chuhaoliu.com](https://chuhaoliu.com/2023/08/18/fist_blog.html)
 
