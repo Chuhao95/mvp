@@ -22,21 +22,7 @@ df.head()
 
 
 
-  <div id="df-8af9edb3-d195-4b7e-99b3-626362f788c1" class="colab-df-container">
-    <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -79,147 +65,7 @@ df.head()
     </tr>
   </tbody>
 </table>
-</div>
-    <div class="colab-df-buttons">
 
-  <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8af9edb3-d195-4b7e-99b3-626362f788c1')"
-            title="Convert this dataframe to an interactive table."
-            style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
-    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
-  </svg>
-    </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    .colab-df-buttons div {
-      margin-bottom: 4px;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-    <script>
-      const buttonEl =
-        document.querySelector('#df-8af9edb3-d195-4b7e-99b3-626362f788c1 button.colab-df-convert');
-      buttonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-      async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8af9edb3-d195-4b7e-99b3-626362f788c1');
-        const dataTable =
-          await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                    [key], {});
-        if (!dataTable) return;
-
-        const docLinkHtml = 'Like what you see? Visit the ' +
-          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-          + ' to learn more about interactive tables.';
-        element.innerHTML = '';
-        dataTable['output_type'] = 'display_data';
-        await google.colab.output.renderOutput(dataTable, element);
-        const docLink = document.createElement('div');
-        docLink.innerHTML = docLinkHtml;
-        element.appendChild(docLink);
-      }
-    </script>
-  </div>
-
-
-<div id="df-f9ca0fe2-3233-4a5f-936a-9963a5453c59">
-  <button class="colab-df-quickchart" onclick="quickchart('df-f9ca0fe2-3233-4a5f-936a-9963a5453c59')"
-            title="Suggest charts."
-            style="display:none;">
-
-<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-     width="24px">
-    <g>
-        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-    </g>
-</svg>
-  </button>
-
-<style>
-  .colab-df-quickchart {
-    background-color: #E8F0FE;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    fill: #1967D2;
-    height: 32px;
-    padding: 0 0 0 0;
-    width: 32px;
-  }
-
-  .colab-df-quickchart:hover {
-    background-color: #E2EBFA;
-    box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-    fill: #174EA6;
-  }
-
-  [theme=dark] .colab-df-quickchart {
-    background-color: #3B4455;
-    fill: #D2E3FC;
-  }
-
-  [theme=dark] .colab-df-quickchart:hover {
-    background-color: #434B5C;
-    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-    fill: #FFFFFF;
-  }
-</style>
-
-  <script>
-    async function quickchart(key) {
-      const charts = await google.colab.kernel.invokeFunction(
-          'suggestCharts', [key], {});
-    }
-    (() => {
-      let quickchartButtonEl =
-        document.querySelector('#df-f9ca0fe2-3233-4a5f-936a-9963a5453c59 button');
-      quickchartButtonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-    })();
-  </script>
-</div>
-    </div>
-  </div>
 
 
 
@@ -241,7 +87,7 @@ im.to_thumb(256,256)
 
 
     
-![png](Train_Model_files/Train_Model_3_0.png)
+![png](images/download_example.png)
     
 
 
