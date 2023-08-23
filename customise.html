@@ -39,15 +39,17 @@
         a:hover {
             text-decoration: underline;
         }
-        img {
+        .image-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .image-container img {
             max-width: 100%;
             height: auto;
-            margin: 20px auto;
-            display: block;
             border: 1px solid #ddd;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
         }
-        p {
+	p {
             text-align: center;
             padding: 20px;
         }
@@ -71,8 +73,9 @@
     </ol>
 
     <!-- Image -->
-    <img src="/images/Youtube%20Analytics.png" alt="YouTube Analytics">
-
+    <div class="image-container">
+        <img src="/images/Youtube%20Analytics.png" alt="YouTube Analytics">
+    </div>
 </body>
 </html>
 
