@@ -1,20 +1,41 @@
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/3.36.1/gradio.js"
-></script>
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.36.1/gradio.js"></script>
+</head>
+<body>
+    <style>
+        /* Style the container div to create a row layout */
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
 
-<gradio-app src="https://old-fat-boy-draggan-inversion.hf.space"></gradio-app>
+        /* Style the individual divs within the container */
+        .gradio-component {
+            flex: 1; /* Make each component take up equal space */
+            margin: 10px; /* Add some spacing between components */
+            border: 1px solid #ddd; /* Add a border for clarity */
+            padding: 10px; /* Add some padding for spacing inside each div */
+        }
+    </style>
 
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/3.36.1/gradio.js"
-></script>
+    <!-- Create a container div to hold the Gradio components in a row -->
+    <div class="container">
+        <!-- First Gradio component -->
+        <div class="gradio-component">
+            <gradio-app src="https://old-fat-boy-draggan-inversion.hf.space"></gradio-app>
+        </div>
 
-<gradio-app src="https://old-fat-boy-draggan-inversion.hf.space"></gradio-app>
+        <!-- Second Gradio component -->
+        <div class="gradio-component">
+            <gradio-app src="https://old-fat-boy-draggan-inversion.hf.space"></gradio-app>
+        </div>
 
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/3.36.1/gradio.js"
-></script>
-
-<gradio-app src="https://old-fat-boy-draggan-inversion.hf.space"></gradio-app>
+        <!-- Third Gradio component -->
+        <div class="gradio-component">
+            <gradio-app src="https://old-fat-boy-draggan-inversion.hf.space"></gradio-app>
+        </div>
+    </div>
+</body>
+</html>
