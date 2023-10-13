@@ -1,41 +1,33 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.36.1/gradio.js"></script>
-</head>
-<body>
+
+<html lang="en">
+    <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-K9N6LG5C5K"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'G-K9N6LG5C5K');
+	</script>
+	<meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Old Fat Boy</title>
     <style>
-        /* Style the container div to create a row layout */
-        .container {
-            display: flex;
-            justify-content: space-between;
+       h1 {
+            text-align: center;
         }
-
-        /* Style the individual divs within the container */
-        .gradio-component {
-            flex: 1; /* Make each component take up equal space */
-            margin: 10px; /* Add some spacing between components */
-            border: 1px solid #ddd; /* Add a border for clarity */
-            padding: 10px; /* Add some padding for spacing inside each div */
-        }
+	p {
+            text-align: center;
+        }    
     </style>
+	<link rel="shortcut icon" type="image/png" href="oldfatboy.png">    
+    </head>
+    <body>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/3.47.1/gradio.js"
+></script>
 
-    <!-- Create a container div to hold the Gradio components in a row -->
-    <div class="container">
-        <!-- First Gradio component -->
-        <div class="gradio-component">
-            <gradio-app src="https://old-fat-boy-draggan-inversion.hf.space"></gradio-app>
-        </div>
-
-        <!-- Second Gradio component -->
-        <div class="gradio-component">
-            <gradio-app src="https://old-fat-boy-draggan-inversion.hf.space"></gradio-app>
-        </div>
-
-        <!-- Third Gradio component -->
-        <div class="gradio-component">
-            <gradio-app src="https://old-fat-boy-draggan-inversion.hf.space"></gradio-app>
-        </div>
-    </div>
-</body>
+<gradio-app src="https://old-fat-boy-thumbnail-demo.hf.space"></gradio-app>    </body>
 </html>
